@@ -252,12 +252,13 @@ const Sidebar = styled.div`
   z-index: 20;
   overflow-x: hidden;
   @media screen and (max-width: 320px) {
-    width: 250px;
+    width: 100%;
   }
   @media (min-width: 321px) and (max-width: 399px) {
-    width: 280px;
+    width: 100%;
   }
   @media (min-width: 400px) and (max-width: 499px) {
+    width: 100%;
   }
 `;
 
