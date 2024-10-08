@@ -20,8 +20,8 @@ const GlobalStyle = createGlobalStyle`
   html, body {
     margin: 0 !important;
     padding: 0 !important;
-  background: #f4faf1;
-font-family: 'Aileron', sans-serif;
+ 
+
 
   font-optical-sizing: auto;
 

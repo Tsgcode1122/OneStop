@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { motion, AnimatePresence } from "framer-motion";
-import Img1 from "../Images/1.jpg";
-import Img2 from "../Images/2.jpg";
+import Img1 from "../Images/2.jpg";
+import Img2 from "../Images/1.jpg";
 import Img3 from "../Images/3.jpg";
 import Img4 from "../Images/4.jpg";
 import { Colors } from "../Colors/ColorComponent";
@@ -15,7 +15,7 @@ const Hero = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage((prev) => (prev + 1) % images.length);
-    }, 5000); // 5 seconds interval
+    }, 6000); // 5 seconds interval
     return () => clearInterval(interval);
   }, []);
 
@@ -127,6 +127,7 @@ const Button = styled.button`
   margin-bottom: 10px;
   &:hover {
     background-color: #e5efdc;
+    border: 1px solid #349c40;
   }
 `;
 const Button1 = styled(motion.button)`
