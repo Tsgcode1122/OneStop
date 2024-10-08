@@ -145,4 +145,11 @@ const Button1 = styled(motion.button)`
   &:hover {
     color: black;
   }
+  &:active,
+  &:focus {
+    background-position-x: 0%; /* Mimic hover on mobile */
+    color: black;
+
+    outline: none; /* Prevent outline on focus */
+  }
 `;

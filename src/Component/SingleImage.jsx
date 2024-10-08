@@ -88,4 +88,10 @@ const Button = styled(motion.button)`
   &:hover {
     color: #d4b396;
   }
+  &:active,
+  &:focus {
+    background-position-x: -100%; /* Mimic hover on mobile */
+    color: #d4b396;
+    outline: none; /* Prevent outline on focus */
+  }
 `;
