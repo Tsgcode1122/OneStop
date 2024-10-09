@@ -57,14 +57,23 @@ const Container = styled.div`
   font-family: "Poppins", sans-serif;
   background: #010700;
   padding: 3rem 2rem 2rem 2rem;
+  @media screen and (max-width: 320px) {
+    padding: 3rem 1rem 2rem 1rem;
+  }
+  @media (min-width: 321px) and (max-width: 399px) {
+    padding: 3rem 1.3rem 2rem 1.3rem;
+  }
+  @media (min-width: 400px) and (max-width: 499px) {
+    padding: 3rem 1.5rem 2rem 1.5rem;
+  }
 `;
 const Content = styled.div`
-  background-color: #fbf7f2;
+  background-color: #f8fbf8;
   border-radius: 30px;
   padding: 35px 30px 20px 30px;
 `;
 const Reserve = styled.p`
-  background-color: #d7d7d7;
+  background-color: #dfe3e0;
   padding: 10px;
   border-radius: 10px;
   color: gray;
@@ -107,4 +116,13 @@ const Last = styled.div`
 const More = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  @media screen and (max-width: 320px) {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+  @media (min-width: 321px) and (max-width: 399px) {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+  @media (min-width: 400px) and (max-width: 499px) {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
 `;

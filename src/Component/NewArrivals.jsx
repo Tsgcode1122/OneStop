@@ -21,7 +21,7 @@ const Details = [
   },
   {
     Img: Img3,
-    Subhead: "Abib Glutathiosome Dark Spot Serum",
+    Subhead: " Glutathiosome Dark Spot Serum",
     price: "$24",
     ButtonContent: "Sold out",
   },
@@ -43,7 +43,9 @@ const NewArrivals = () => {
       <Content>
         {Details.map((item, index) => (
           <Cont key={index}>
-            <ProductImage src={item.Img} alt={item.Subhead} />
+            <span>
+              <ProductImage src={item.Img} alt={item.Subhead} />
+            </span>
             <Subhead>{item.Subhead}</Subhead>
             <Price>{item.price}</Price>
             <Button disabled>{item.ButtonContent}</Button>
@@ -59,6 +61,15 @@ export default NewArrivals;
 const Container = styled.div`
   background: ${Colors.light};
   padding: 6rem 2rem 4rem 2rem;
+  @media screen and (max-width: 320px) {
+    padding: 5rem 2rem 4rem 1rem;
+  }
+  @media (min-width: 321px) and (max-width: 399px) {
+    padding: 6rem 1.3rem 4rem 1.3rem;
+  }
+  @media (min-width: 400px) and (max-width: 499px) {
+    padding: 6rem 1.5rem 4rem 1.5rem;
+  }
 `;
 
 const Heading = styled.h2`
@@ -88,6 +99,15 @@ const Content = styled.div`
   justify-content: center;
   gap: 2rem;
   border-radius: 20px;
+  @media screen and (max-width: 320px) {
+    padding: 1rem;
+  }
+  @media (min-width: 321px) and (max-width: 399px) {
+    padding: 1rem;
+  }
+  @media (min-width: 400px) and (max-width: 499px) {
+    padding: 1rem;
+  }
 `;
 
 const Cont = styled.div`
@@ -101,6 +121,8 @@ const Cont = styled.div`
 
   @media (min-width: 768px) {
     width: calc(25% - 2rem);
+  }
+  span {
   }
 `;
 

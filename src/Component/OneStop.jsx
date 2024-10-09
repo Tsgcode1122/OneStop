@@ -21,18 +21,37 @@ const Container = styled.div`
   background-image: url(${glassbg});
   background-size: cover;
   background-position: center;
+  @media screen and (max-width: 320px) {
+    padding: 5rem 1rem 5rem 1rem;
+  }
+  @media (min-width: 321px) and (max-width: 399px) {
+    padding: 5rem 1.3rem 5rem 1.3rem;
+  }
+  @media (min-width: 400px) and (max-width: 499px) {
+    padding: 5rem 1.5rem 5rem 1.5rem;
+  }
 `;
 const Content = styled.div`
   display: flex;
+  text-align: center;
   padding: 20px 0;
   color: white;
   gap: 20px;
   border: 0.2px solid #bebebe;
   border-radius: 20px;
-  /* background-color: rgba(255, 255, 255, 0.1); */
+
   backdrop-filter: blur(14px);
   flex-direction: column;
   align-items: center;
+  @media screen and (max-width: 320px) {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  @media (min-width: 321px) and (max-width: 399px) {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  @media (min-width: 400px) and (max-width: 499px) {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
 `;
 const Subhead = styled.p`
   font-size: 14px;
@@ -47,6 +66,21 @@ const Heading = styled.h2`
   margin: 0;
   line-height: 25px;
   font-weight: 400;
+  @media screen and (max-width: 320px) {
+    font-size: 27px;
+    font-weight: 200;
+    line-height: 40px;
+  }
+  @media (min-width: 321px) and (max-width: 399px) {
+    font-size: 33px;
+    font-weight: 200;
+    line-height: 40px;
+  }
+  @media (min-width: 400px) and (max-width: 499px) {
+    font-size: 33px;
+    font-weight: 200;
+    line-height: 40px;
+  }
 `;
 const Button = styled.button`
   padding: 15px 30px;

@@ -103,6 +103,15 @@ const Container = styled.div`
   padding: 80px 2rem;
   position: relative;
   background-color: #f2ebe2;
+  @media screen and (max-width: 320px) {
+    padding: 80px 1rem;
+  }
+  @media (min-width: 321px) and (max-width: 399px) {
+    padding: 80px 1.3rem;
+  }
+  @media (min-width: 400px) and (max-width: 499px) {
+    padding: 80px 1.5rem;
+  }
 `;
 const Cont = styled.div`
   display: flex;
@@ -139,6 +148,15 @@ const Heading = styled.h2`
   font-family: "Playfair Display", serif;
   line-height: 42px;
   text-align: center;
+  @media screen and (max-width: 320px) {
+    font-size: 34px;
+  }
+  @media (min-width: 321px) and (max-width: 399px) {
+    font-size: 34px;
+  }
+  @media (min-width: 400px) and (max-width: 499px) {
+    font-size: 34px;
+  }
 `;
 const Intro = styled.p`
   text-align: center;

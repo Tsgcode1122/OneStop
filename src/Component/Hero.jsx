@@ -102,6 +102,18 @@ const Content = styled.div`
     line-height: 47px;
     font-weight: 500;
     margin: 0;
+    @media screen and (max-width: 320px) {
+      padding: 0 1rem;
+      font-size: 40px;
+    }
+    @media (min-width: 321px) and (max-width: 399px) {
+      font-size: 40px;
+      padding: 0 1rem;
+    }
+    @media (min-width: 400px) and (max-width: 499px) {
+      font-size: 40px;
+      padding: 0 1rem;
+    }
   }
 
   p {
@@ -111,6 +123,18 @@ const Content = styled.div`
     line-height: 28px;
     font-weight: 300;
     margin-bottom: 30px;
+    @media screen and (max-width: 320px) {
+      padding: 0 2rem;
+      font-size: 15px;
+    }
+    @media (min-width: 321px) and (max-width: 399px) {
+      font-size: 15px;
+      padding: 0 2rem;
+    }
+    @media (min-width: 400px) and (max-width: 499px) {
+      font-size: 15px;
+      padding: 0 2rem;
+    }
   }
 `;
 

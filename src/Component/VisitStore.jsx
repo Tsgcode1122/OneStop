@@ -49,14 +49,33 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @media screen and (max-width: 320px) {
+    padding: 5rem 1rem 4rem 1rem;
+  }
+  @media (min-width: 321px) and (max-width: 399px) {
+    padding: 6rem 1.3rem 4rem 1.3rem;
+  }
+  @media (min-width: 400px) and (max-width: 499px) {
+    padding: 6rem 1.5rem 4rem 1.5rem;
+  }
 `;
 const ImageContainer = styled.div`
   display: flex;
+  overflow: hidden;
   gap: 10px;
   img {
     max-width: 100%;
     border-radius: 10px;
     height: 320px;
+    @media screen and (max-width: 320px) {
+      height: 250px;
+    }
+    @media (min-width: 321px) and (max-width: 399px) {
+      height: 250px;
+    }
+    @media (min-width: 400px) and (max-width: 499px) {
+      height: 250px;
+    }
   }
 `;
 const Content = styled.div``;

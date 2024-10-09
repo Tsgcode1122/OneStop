@@ -46,6 +46,15 @@ const Container = styled.div`
     height: auto;
     border-radius: 10px;
   }
+  @media screen and (max-width: 320px) {
+    padding: 5rem 1rem 6rem 1rem;
+  }
+  @media (min-width: 321px) and (max-width: 399px) {
+    padding: 6rem 1.3rem 6rem 1.3rem;
+  }
+  @media (min-width: 400px) and (max-width: 499px) {
+    padding: 6rem 1.5rem 6rem 1.5rem;
+  }
 `;
 const Content = styled.div`
   padding-top: 30px;

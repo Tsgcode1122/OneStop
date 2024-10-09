@@ -108,16 +108,12 @@ const FaqsContainer = styled.div`
   align-items: center;
   justify-content: center;
   @media screen and (max-width: 320px) {
-    margin: 1rem;
   }
   @media (min-width: 321px) and (max-width: 399px) {
-    margin: 1.3rem;
   }
   @media (min-width: 400px) and (max-width: 499px) {
-    margin: 1.5rem;
   }
   @media screen and (min-width: 800px) {
-    margin: 2rem 4rem;
   }
   @media screen and (min-width: 1000px) {
     margin: 2rem 6rem;
@@ -152,6 +148,15 @@ const Heading = styled.h2`
   font-family: "Playfair Display", serif;
 
   margin: 0px;
+  @media screen and (max-width: 320px) {
+    font-size: 41px;
+  }
+  @media (min-width: 321px) and (max-width: 399px) {
+    font-size: 41px;
+  }
+  @media (min-width: 400px) and (max-width: 499px) {
+    font-size: 41px;
+  }
 `;
 const SubHead = styled.h5`
   margin-top: 1rem;
@@ -188,11 +193,9 @@ const Question = styled.div`
   align-items: center;
   @media screen and (max-width: 320px) {
     font-size: 0.9rem;
-    padding: 0.8rem;
   }
   @media (min-width: 321px) and (max-width: 399px) {
     font-size: 1rem;
-    padding: 0.9rem;
   }
   @media (min-width: 400px) and (max-width: 499px) {
     padding: 1rem;
