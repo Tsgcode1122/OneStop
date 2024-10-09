@@ -6,6 +6,7 @@ import VisitStore from "../Component/VisitStore";
 import Different from "../Component/Different";
 import ImageAlone from "../Component/ImageAlone";
 import Faqs from "../Component/Faqs";
+import OneStop from "../Component/OneStop";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <Different />
       <ImageAlone />
       <Faqs />
+      <OneStop />
     </>
   );
 };

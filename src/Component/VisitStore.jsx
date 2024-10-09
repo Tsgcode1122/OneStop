@@ -3,13 +3,18 @@ import styled from "styled-components";
 import store from "../Images/store1.jpg";
 import store2 from "../Images/store2.jpg";
 import { motion } from "framer-motion";
+import SwipeComponent from "../Motion/SwipeComponent";
 
 const VisitStore = () => {
   return (
     <Container>
       <ImageContainer>
-        <img src={store} />
-        <img src={store2} />
+        <SwipeComponent right-to-left>
+          <img src={store} />
+        </SwipeComponent>
+        <SwipeComponent left-to-right>
+          <img src={store2} />
+        </SwipeComponent>
       </ImageContainer>
 
       <Descriptions>

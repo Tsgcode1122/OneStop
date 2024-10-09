@@ -28,9 +28,9 @@ const SwipeComponent = ({ direction, children }) => {
       opacity: 0.8,
       x:
         direction === "right-to-left"
-          ? 15
+          ? 50
           : direction === "left-to-right"
-            ? -15
+            ? -50
             : 0,
     },
     visible: {

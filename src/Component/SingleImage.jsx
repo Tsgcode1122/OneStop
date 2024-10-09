@@ -3,11 +3,14 @@ import styled from "styled-components";
 import SingleImg from "../Images/singleImage.jpg";
 import { Colors } from "../Colors/ColorComponent";
 import { motion } from "framer-motion";
+import DownToUp from "../Motion/DownToUp";
 
 const SingleImage = () => {
   return (
     <Container>
-      <img src={SingleImg} />
+      <DownToUp>
+        <img src={SingleImg} />
+      </DownToUp>
       <Content>
         <Subhead>Skin1008</Subhead>
         <Description>

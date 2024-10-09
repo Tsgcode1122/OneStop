@@ -34,7 +34,7 @@ const DownToUp = ({ children }) => {
 
   const itemVariants = {
     hidden: {
-      y: 30, // Start slightly below the original position
+      y: 130, // Start slightly below the original position
     },
     visible: {
       opacity: 1,
