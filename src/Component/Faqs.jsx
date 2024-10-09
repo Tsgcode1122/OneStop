@@ -18,30 +18,34 @@ const Faqs = () => {
 
   const faqs = [
     {
-      question: "What is included in your HVAC services?",
+      question: "How authentic are your products?",
       answer:
-        "Our HVAC services include  maintenance and repair of heating, ventilation, and air conditioning systems. We ensure that your system runs efficiently and effectively.",
+        "They are authentic as they are sourced from the manufacturers of these items.",
     },
     {
-      question: "How often should air ducts and dryer vents be cleaned?",
-      answer:
-        "Air ducts and dryer vents should be cleaned every 1-2 years, depending on usage and other debris, such as animal hair, etc. that can affect the air quality and performance of your system.",
+      question: "Do you recommend products?",
+      answer: "No, we do not offer recommendations at the moment",
     },
     {
-      question: "What is the process for chimney repair?",
-      answer:
-        "Chimney repair involves inspecting for damage, cleaning the chimney, and repairing any structural issues. We address problems like cracked flues, deteriorated mortar, and other issues to ensure safe operation.",
-    },
-    {
-      question: "How do you handle carpet cleaning?",
+      question: "how long does it take to deliver?",
       answer:
         "Our carpet cleaning service uses advanced techniques and equipment to remove stains, dirt, and allergens from your carpets. We offer both deep cleaning and maintenance options to keep your carpets looking fresh.",
     },
     {
-      question:
-        " How do I know if my air ducts or dryer vent needs to be cleaned? ",
+      question: "how much does delivery cost?",
       answer:
-        "If it takes more than 1 cycle to dry your clothes, this means your dryer vent is clogged and needs to be cleaned immediately. If your house has a lot of dust or you are experiencing allergies, excessive sneezing or coughing, your air ducts have been compromised and require immediate attention. Dirty air ducts can lead to mold and bacteria inside of your system, causing severe health issues.",
+        "It depends on delivery location and delivery method and the weight of the order.",
+    },
+    {
+      question: "can I get discount if I bulk purchase?",
+      answer:
+        "We do not offer discounts at the moment. Subscribe to our Newsletters so you can be the first to know when we start sending discount offers.",
+    },
+    {
+      question:
+        "am travelling. can you deliver my order at a specific day and time?",
+      answer:
+        "Due to unpredictable logistics challenges, we are unable to provide or guarantee an exact delivery day or time.",
     },
   ];
 
@@ -49,7 +53,7 @@ const Faqs = () => {
     <>
       <FaqsContainer>
         <Content>
-          <h4>Faqs</h4>
+          <Heading>Faqs</Heading>
           <SubHead>
             Here are a few more Questions you may have in mind. We have provided
             answers to every question in this section.
@@ -141,14 +145,22 @@ const Content = styled.div`
   }
 `;
 
+const Heading = styled.h2`
+  font-size: 51px;
+
+  font-weight: 600;
+  font-family: "Playfair Display", serif;
+
+  margin: 0px;
+`;
 const SubHead = styled.h5`
   margin-top: 1rem;
-  font-size: 1.2rem;
-  color: #070b0d;
-  font-weight: 500;
-  text-align: center;
-  font-family: "Philosopher", sans-serif;
-  margin-bottom: 30px;
+  font-size: 16px;
+  color: #6e6e6e;
+  font-weight: 400;
+
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
 `;
 
 const Split = styled.div`
@@ -159,24 +171,18 @@ const Split = styled.div`
     align-items: center;
   }
 `;
-const Image = styled.div`
-  display: none;
-  @media screen and (min-width: 1000px) {
-    display: block;
-  }
-  img {
-    max-width: 100%;
-  }
+
+const FaqItem = styled.div`
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #bbbaba;
 `;
-const FaqItem = styled.div``;
 
 const Question = styled.div`
-  padding: 2rem 0;
-  border-bottom: 1px solid #bbbaba;
   color: black;
-  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
   cursor: pointer;
-
+  font-size: 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -196,10 +202,10 @@ const Question = styled.div`
 
 const Answer = styled(motion.div)`
   overflow: hidden;
-  padding: 0 1rem;
-  background: ${Colors.light};
+  padding: 0 0rem;
+
   border-radius: 4px;
-  color: ${Colors.forest};
+  color: #6e6e6e;
   p {
     margin: 0;
     padding: 1rem 0;
