@@ -42,7 +42,7 @@ const DownToUp = ({ children }) => {
       transition: {
         type: "spring",
         stiffness: 40,
-        duration: 0.3,
+        duration: 10,
       },
     },
   };

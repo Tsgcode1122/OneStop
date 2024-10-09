@@ -9,10 +9,10 @@ const VisitStore = () => {
   return (
     <Container>
       <ImageContainer>
-        <SwipeComponent right-to-left>
+        <SwipeComponent direction="left-to-right">
           <img src={store} />
         </SwipeComponent>
-        <SwipeComponent left-to-right>
+        <SwipeComponent direction="right-to-left">
           <img src={store2} />
         </SwipeComponent>
       </ImageContainer>

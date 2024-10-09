@@ -39,7 +39,7 @@ const SwipeComponent = ({ direction, children }) => {
       transition: {
         type: "spring",
         stiffness: 30,
-        duration: 10,
+        duration: 15,
       },
     },
   };

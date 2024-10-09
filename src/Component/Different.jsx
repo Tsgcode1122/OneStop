@@ -7,9 +7,9 @@ import icon3 from "../Images/icon3.png";
 import icon4 from "../Images/icon4.png";
 import Img1 from "../Images/111.jpg";
 import Img2 from "../Images/1111.jpg";
-// import Img3 from "../Images/icon4.png";
-// import Img4 from "../Images/icon4.png";
+
 import { motion, AnimatePresence } from "framer-motion";
+import DownToUp from "../Motion/DownToUp";
 const images = [Img1, Img2];
 const Different = () => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -36,15 +36,17 @@ const Different = () => {
           </Writeup>
           <Underline />
         </Cont>
-        <Cont>
-          <img src={icon2} />
-          <Head>Quick Delivery</Head>
-          <Writeup>
-            Your order will get delivered to you in a matter of days and if
-            there will be a reason for a delay, we will update you with the new
-            delivery timeline.
-          </Writeup>
-        </Cont>
+        <DownToUp>
+          <Cont>
+            <img src={icon2} />
+            <Head>Quick Delivery</Head>
+            <Writeup>
+              Your order will get delivered to you in a matter of days and if
+              there will be a reason for a delay, we will update you with the
+              new delivery timeline.
+            </Writeup>
+          </Cont>
+        </DownToUp>
         <ImageContainer>
           <AnimatePresence>
             <img
@@ -73,14 +75,16 @@ const Different = () => {
           </Writeup>
           <Underline />
         </Cont>
-        <Cont>
-          <img src={icon3} />
-          <Head>Usage Guide</Head>
-          <Writeup>
-            All our products comes with a “directions or how to use” section so
-            as to make the usage of the products even easier for you.
-          </Writeup>
-        </Cont>
+        <DownToUp>
+          <Cont>
+            <img src={icon3} />
+            <Head>Usage Guide</Head>
+            <Writeup>
+              All our products comes with a “directions or how to use” section
+              so as to make the usage of the products even easier for you.
+            </Writeup>
+          </Cont>
+        </DownToUp>
       </Content>
     </Container>
   );

@@ -2,6 +2,7 @@ import React from "react";
 
 import glassbg from "../Images/glassbg.jpg";
 import styled from "styled-components";
+import DownToUp from "../Motion/DownToUp";
 const OneStop = () => {
   return (
     <Container>
