@@ -20,8 +20,8 @@ const Home = () => {
       <NewArrivals />
       <SingleImage />
       <VisitStore />
-      <FixedBackground />
-      <VideoBackgroundComponent />
+      {/* <FixedBackground />
+      <VideoBackgroundComponent /> */}
       <Different />
 
       <ImageAlone />
