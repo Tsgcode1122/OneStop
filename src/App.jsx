@@ -20,7 +20,7 @@ const GlobalStyle = createGlobalStyle`
   html, body {
     margin: 0 !important;
     padding: 0 !important;
- 
+   /* scroll-behavior: smooth; */
 
 
   font-optical-sizing: auto;

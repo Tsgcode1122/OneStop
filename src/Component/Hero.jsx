@@ -20,7 +20,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <Container>
+    <Container id="home">
       <AnimatePresence>
         <Background
           key={currentImage}
@@ -88,6 +88,9 @@ const Container = styled.div`
   @media screen and (min-width: 1200px) {
     height: 95vh;
   }
+  @media screen and (max-width: 320px) {
+    height: 100vh;
+  }
 `;
 
 const Background = styled(motion.div)`
@@ -123,6 +126,12 @@ const Content = styled.div`
   @media screen and (min-width: 1200px) {
     height: 95vh;
   }
+
+  @media screen and (max-width: 320px) {
+    height: 100vh;
+    gap: 1px;
+    padding: 2rem 0;
+  }
   h1 {
     padding: 0 2rem;
     font-family: "Playfair Display", serif;
@@ -131,8 +140,9 @@ const Content = styled.div`
     font-weight: 500;
     margin: 0;
     @media screen and (max-width: 320px) {
-      padding: 0 1rem;
-      font-size: 40px;
+      padding: 1rem;
+      font-size: 32px;
+      line-height: 36px;
     }
     @media (min-width: 321px) and (max-width: 399px) {
       font-size: 40px;
@@ -173,6 +183,7 @@ const Content = styled.div`
     @media screen and (max-width: 320px) {
       padding: 0 2rem;
       font-size: 15px;
+      line-height: 18px;
     }
     @media (min-width: 321px) and (max-width: 399px) {
       font-size: 15px;

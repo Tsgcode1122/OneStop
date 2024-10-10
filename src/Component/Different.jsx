@@ -22,7 +22,7 @@ const Different = () => {
   }, []);
 
   return (
-    <Container>
+    <Container id="about">
       <Intro>WHAT MAKE US DIFFERENT</Intro>
       <Heading>The values we live by</Heading>
       <Content>

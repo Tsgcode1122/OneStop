@@ -5,7 +5,7 @@ import styled from "styled-components";
 import DownToUp from "../Motion/DownToUp";
 const OneStop = () => {
   return (
-    <Container>
+    <Container id="subscribe">
       <Content>
         <Subhead>OneStopBody.com</Subhead>
         <Heading>Get Updates on Discounts</Heading>

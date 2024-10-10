@@ -35,7 +35,7 @@ const Details = [
 
 const NewArrivals = () => {
   return (
-    <Container>
+    <Container id="store">
       <Heading>NEW ARRIVALS</Heading>
       <Intro>
         Here is where we showcase our restocked and newly stocked products.
@@ -62,7 +62,7 @@ const Container = styled.div`
   background: ${Colors.light};
   padding: 6rem 2rem 4rem 2rem;
   @media screen and (max-width: 320px) {
-    padding: 5rem 2rem 4rem 1rem;
+    padding: 5rem 1rem 4rem 1rem;
   }
   @media (min-width: 321px) and (max-width: 399px) {
     padding: 6rem 1.3rem 4rem 1.3rem;

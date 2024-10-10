@@ -48,6 +48,12 @@ export default SingleImage;
 const Container = styled.div`
   background: ${Colors.white};
   padding: 5rem 2rem 7rem 2rem;
+  span {
+    display: none;
+    @media screen and (min-width: 700px) {
+      display: block;
+    }
+  }
   img {
     max-width: 100%;
     height: auto;
@@ -92,12 +98,7 @@ const Content = styled.div`
   padding-top: 30px;
 
   text-align: center;
-  span {
-    display: none;
-    @media screen and (min-width: 700px) {
-      display: block;
-    }
-  }
+
   @media screen and (min-width: 700px) {
     max-width: 300px;
   }

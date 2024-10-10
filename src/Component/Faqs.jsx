@@ -51,7 +51,7 @@ const Faqs = () => {
 
   return (
     <>
-      <FaqsContainer>
+      <FaqsContainer id="faqs">
         <Content>
           <Heading>Faqs</Heading>
           <SubHead>

@@ -64,51 +64,54 @@ const Navbar = () => {
       <Sidebar isOpen={isSidebarOpen} ref={sidebarRef}>
         <SidebarContent>
           <LinkContainer>
-            <LinkCont
-              to="/"
+            <a
+              href="#home"
               onClick={closeSidebar}
               style={{ background: "black", color: "white" }}
             >
               <span>Home</span>
-            </LinkCont>
-            <LinkCont to="/about" onClick={closeSidebar}>
+            </a>
+            <a href="#about" onClick={closeSidebar}>
               <span>About Us</span>
-            </LinkCont>
+            </a>
 
-            <LinkCont to="/services" onClick={closeSidebar}>
-              <span>Categories</span>
-            </LinkCont>
-            <LinkCont to="/services" onClick={closeSidebar}>
-              <span>Shop</span>
-            </LinkCont>
-            <LinkCont to="/contact" onClick={closeSidebar}>
-              <span>Blog</span>
-            </LinkCont>
+            <a href="#subscribe" onClick={closeSidebar}>
+              <span>Subscription</span>
+            </a>
+            <a href="#store" onClick={closeSidebar}>
+              <span>Store</span>
+            </a>
+            <a href="#faqs" onClick={closeSidebar}>
+              <span>Faqs</span>
+            </a>
           </LinkContainer>
         </SidebarContent>
       </Sidebar>
 
-      {isSidebarOpen && <Overlay onClick={closeSidebar} />}
+      {/* {isSidebarOpen && <Overlay onClick={closeSidebar} />} */}
 
       <BigNav>
         <BigCon>
-          <Link to="/">
+          <a href="#home">
             <img src={logo} />
-          </Link>
+          </a>
 
           <LinkBig>
-            <LinkC to="/">
+            <a href="#home">
               <span>Home</span>
-            </LinkC>
-            <LinkC to="/about">
+            </a>
+            <a href="#about">
               <span>About Us</span>
-            </LinkC>
-            <LinkC to="/services">
-              <span>Shop</span>
-            </LinkC>
-            <LinkC to="/contact">
-              <span>Blog</span>
-            </LinkC>
+            </a>
+            <a href="#store">
+              <span>Store</span>
+            </a>
+            <a href="#faqs">
+              <span>Faqs</span>
+            </a>
+            <a href="#subscribe">
+              <span>Subscription</span>
+            </a>
           </LinkBig>
         </BigCon>
       </BigNav>
@@ -134,16 +137,15 @@ const BigNav = styled.div`
 const BigCon = styled.div`
   padding: 10px 40px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   @media screen and (min-width: 800px) {
     padding: 10px 50px;
   }
   @media screen and (min-width: 1000px) {
-    padding: 1px 70px;
+    padding: 10px 70px;
   }
   @media screen and (min-width: 1200px) {
-    padding: 1px 140px;
+    padding: 10px 140px;
   }
 `;
 const LinkBig = styled.div`
@@ -153,19 +155,10 @@ const LinkBig = styled.div`
   padding: 0 2rem;
   gap: 20px;
   justify-content: space-between;
-`;
-const LinkC = styled(Link)`
-  display: flex;
-  text-decoration: none;
-  color: black;
-  padding: 20px !important;
-  text-align: center;
-  justify-content: space-between;
-`;
-
-const LinkContA = styled.a`
-  display: flex;
-  justify-content: space-between;
+  a {
+    text-decoration: none;
+    color: black;
+  }
 `;
 
 const SidebarContent = styled.div`
@@ -197,6 +190,15 @@ const LinkContainer = styled.div`
   flex-direction: column;
 
   text-align: center;
+  a {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    padding: 20px !important;
+    text-align: center;
+    justify-content: space-between;
+    z-index: 999;
+  }
 `;
 const LinkCont = styled(Link)`
   padding: 20px !important;
