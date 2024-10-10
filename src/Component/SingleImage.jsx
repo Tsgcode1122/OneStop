@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import SingleImg from "../Images/singleImage.jpg";
+import SingleImg2 from "../Images/back1.jpg";
 import { Colors } from "../Colors/ColorComponent";
 import { motion } from "framer-motion";
 import DownToUp from "../Motion/DownToUp";
@@ -11,6 +12,7 @@ const SingleImage = () => {
       <DownToUp>
         <img src={SingleImg} />
       </DownToUp>
+
       <Content>
         <Subhead>Skin1008</Subhead>
         <Description>
@@ -33,6 +35,11 @@ const SingleImage = () => {
           Buy Skin100 Products
         </Button>
       </Content>
+      <DownToUp>
+        <span>
+          <img src={SingleImg2} />
+        </span>
+      </DownToUp>
     </Container>
   );
 };
@@ -46,6 +53,12 @@ const Container = styled.div`
     height: auto;
     border-radius: 10px;
     overflow: hidden;
+    @media screen and (min-width: 700px) {
+      height: 300px;
+    }
+    @media screen and (min-width: 900px) {
+      height: 400px;
+    }
   }
   @media screen and (max-width: 320px) {
     padding: 5rem 1rem 6rem 1rem;
@@ -56,11 +69,38 @@ const Container = styled.div`
   @media (min-width: 400px) and (max-width: 499px) {
     padding: 6rem 1.5rem 6rem 1.5rem;
   }
+  @media screen and (min-width: 700px) {
+    padding: 4rem 4rem 4rem 4rem;
+    display: flex;
+    gap: 20px;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+  }
+  @media screen and (min-width: 1100px) {
+    padding: 4rem 4rem 4rem 4rem;
+    display: flex;
+    gap: 40px;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+  }
 `;
 const Content = styled.div`
   padding-top: 30px;
 
   text-align: center;
+  span {
+    display: none;
+    @media screen and (min-width: 700px) {
+      display: block;
+    }
+  }
+  @media screen and (min-width: 700px) {
+    max-width: 300px;
+  }
 `;
 const Subhead = styled.h3`
   font-weight: 600;

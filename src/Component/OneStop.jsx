@@ -30,6 +30,16 @@ const Container = styled.div`
   @media (min-width: 400px) and (max-width: 499px) {
     padding: 5rem 1.5rem 5rem 1.5rem;
   }
+  @media screen and (min-width: 800px) {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  @media screen and (min-width: 1000px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
 `;
 const Content = styled.div`
   display: flex;
@@ -52,6 +62,16 @@ const Content = styled.div`
   @media (min-width: 400px) and (max-width: 499px) {
     background-color: rgba(255, 255, 255, 0.1);
   }
+  @media screen and (min-width: 800px) {
+    max-width: 600px;
+    padding: 2rem 3rem;
+  }
+  @media screen and (min-width: 1000px) {
+    padding: 3rem 5rem;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 4rem 8rem;
+  }
 `;
 const Subhead = styled.p`
   font-size: 14px;
@@ -59,6 +79,15 @@ const Subhead = styled.p`
   font-family: "Poppins", sans-serif;
   margin: 0;
   line-height: 10px;
+  @media screen and (min-width: 800px) {
+    font-size: 16px;
+  }
+  @media screen and (min-width: 1000px) {
+    font-size: 18px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
+  }
 `;
 const Heading = styled.h2`
   font-size: 30px;
@@ -80,6 +109,18 @@ const Heading = styled.h2`
     font-size: 33px;
     font-weight: 200;
     line-height: 40px;
+  }
+  @media screen and (min-width: 800px) {
+    font-size: 38px;
+    line-height: 40px;
+  }
+  @media screen and (min-width: 1000px) {
+    font-size: 45px;
+    line-height: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 48px;
+    line-height: 70px;
   }
 `;
 const Button = styled.button`

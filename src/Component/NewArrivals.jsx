@@ -70,6 +70,15 @@ const Container = styled.div`
   @media (min-width: 400px) and (max-width: 499px) {
     padding: 6rem 1.5rem 4rem 1.5rem;
   }
+  @media screen and (min-width: 800px) {
+    padding: 6rem 4rem 4rem 4rem;
+  }
+  @media screen and (min-width: 1000px) {
+    padding: 6rem 6rem 4rem 6rem;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 6rem 10rem 4rem 10rem;
+  }
 `;
 
 const Heading = styled.h2`
@@ -79,6 +88,11 @@ const Heading = styled.h2`
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding-bottom: 10px;
+  @media screen and (min-width: 800px) {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+  }
 `;
 
 const Intro = styled.p`
@@ -87,6 +101,10 @@ const Intro = styled.p`
   margin: 0;
   padding-bottom: 20px;
   font-family: "Poppins", sans-serif;
+  @media screen and (min-width: 800px) {
+    text-align: center;
+    font-size: 18px;
+  }
 `;
 
 const Content = styled.div`

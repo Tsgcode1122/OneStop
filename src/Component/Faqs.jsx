@@ -60,32 +60,30 @@ const Faqs = () => {
           </SubHead>
 
           <Split>
-            <div>
-              {faqs.map((faq, index) => (
-                <FaqItem key={index}>
-                  <Question onClick={() => toggleFaq(index)}>
-                    {faq.question}
-                    <IconWrapper>
-                      {selectedFaq === index ? (
-                        <FaChevronUp />
-                      ) : (
-                        <FaChevronDown />
-                      )}
-                    </IconWrapper>
-                  </Question>
-                  <Answer
-                    initial={{ height: 0, opacity: 0 }}
-                    animate={{
-                      height: selectedFaq === index ? "auto" : 0,
-                      opacity: selectedFaq === index ? 1 : 0,
-                    }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <p>{faq.answer}</p>
-                  </Answer>
-                </FaqItem>
-              ))}
-            </div>
+            {faqs.map((faq, index) => (
+              <FaqItem key={index}>
+                <Question onClick={() => toggleFaq(index)}>
+                  {faq.question}
+                  <IconWrapper>
+                    {selectedFaq === index ? (
+                      <FaChevronUp />
+                    ) : (
+                      <FaChevronDown />
+                    )}
+                  </IconWrapper>
+                </Question>
+                <Answer
+                  initial={{ height: 0, opacity: 0 }}
+                  animate={{
+                    height: selectedFaq === index ? "auto" : 0,
+                    opacity: selectedFaq === index ? 1 : 0,
+                  }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <p>{faq.answer}</p>
+                </Answer>
+              </FaqItem>
+            ))}
           </Split>
         </Content>
       </FaqsContainer>
@@ -114,15 +112,13 @@ const FaqsContainer = styled.div`
   @media (min-width: 400px) and (max-width: 499px) {
   }
   @media screen and (min-width: 800px) {
+    padding: 0 1.5rem;
   }
   @media screen and (min-width: 1000px) {
-    margin: 2rem 6rem;
+    padding: 0 3rem;
   }
   @media screen and (min-width: 1200px) {
-    margin: 2rem 9rem;
-  }
-  @media screen and (min-width: 1480px) {
-    margin: 2rem 18rem;
+    padding: 0 8rem;
   }
 `;
 
@@ -138,6 +134,9 @@ const Content = styled.div`
   }
   @media (min-width: 400px) and (max-width: 499px) {
     padding: 1.5rem;
+  }
+  @media screen and (min-width: 800px) {
+    text-align: center;
   }
 `;
 
@@ -166,20 +165,28 @@ const SubHead = styled.h5`
 
   font-family: "Poppins", sans-serif;
   margin: 0px;
+  @media screen and (min-width: 800px) {
+    font-size: 17px;
+    display: inline-flex;
+    max-width: 400px;
+    padding-bottom: 1rem;
+  }
 `;
 
 const Split = styled.div`
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: 800px) {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
-    align-items: center;
   }
 `;
 
 const FaqItem = styled.div`
   padding: 1.5rem 0;
   border-bottom: 1px solid #bbbaba;
+  @media screen and (min-width: 800px) {
+    width: calc(50% - 1rem);
+  }
 `;
 
 const Question = styled.div`

@@ -6,42 +6,46 @@ const Footer = () => {
   return (
     <Container>
       <Content>
-        <Name>OneStopBody</Name>
-        <Intro>
-          For inquiries about your OneStopBody account, payments, and orders,
-          please send your requests to info@OneStopBody.ng
-        </Intro>
-        <More>
-          <Cont>
-            <Head>PAGES</Head>
-            <p>Home Page</p>
-            <p>Shop Page</p>
-            <p>Categories</p>
-            <p>Shop Body</p>
-          </Cont>
-          <Cont>
-            <Head>COMPANY</Head>
-            <p>Contact Us</p>
-            <p>Blog Page</p>
-            <p>Reviews</p>
-            <p>Policy</p>
-          </Cont>
+        <Split>
+          <div>
+            <Name>OneStopBody</Name>
+            <Intro>
+              For inquiries about your OneStopBody account, payments, and
+              orders, please send your requests to info@OneStopBody.ng
+            </Intro>
+          </div>
+          <More>
+            <Cont>
+              <Head>PAGES</Head>
+              <p>Home Page</p>
+              <p>Shop Page</p>
+              <p>Categories</p>
+              <p>Shop Body</p>
+            </Cont>
+            <Cont>
+              <Head>COMPANY</Head>
+              <p>Contact Us</p>
+              <p>Blog Page</p>
+              <p>Reviews</p>
+              <p>Policy</p>
+            </Cont>
 
-          <Cont>
-            <Head>OUR SOCIALS</Head>
-            <Social>
-              <span>
-                <FaFacebookF />
-              </span>
-              <span>
-                <FaInstagram />
-              </span>
-              <span>
-                <FaEnvelope />
-              </span>
-            </Social>
-          </Cont>
-        </More>
+            <Cont>
+              <Head>OUR SOCIALS</Head>
+              <Social>
+                <span>
+                  <FaFacebookF />
+                </span>
+                <span>
+                  <FaInstagram />
+                </span>
+                <span>
+                  <FaEnvelope />
+                </span>
+              </Social>
+            </Cont>
+          </More>
+        </Split>
         <Reserve>All Right reserve 2024 OneStopBody</Reserve>
       </Content>
       <Last>
@@ -65,6 +69,15 @@ const Container = styled.div`
   }
   @media (min-width: 400px) and (max-width: 499px) {
     padding: 3rem 1.5rem 2rem 1.5rem;
+  }
+  @media screen and (min-width: 800px) {
+    padding: 3rem 5rem 2rem 5rem;
+  }
+  @media screen and (min-width: 1000px) {
+    padding: 3rem 8rem 2rem 8rem;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 3rem 8rem 2rem 8rem;
   }
 `;
 const Content = styled.div`
@@ -97,6 +110,20 @@ const Social = styled.div`
     }
   }
 `;
+const Split = styled.div`
+  @media screen and (min-width: 800px) {
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    gap: 40px;
+  }
+  @media screen and (min-width: 1000px) {
+    padding: 0 2rem;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 0 2rem;
+  }
+`;
 const Cont = styled.div``;
 const Intro = styled.p``;
 const Name = styled.h2``;
@@ -111,6 +138,14 @@ const Last = styled.div`
   color: white;
   img {
     max-width: 100%;
+    @media screen and (min-width: 800px) {
+      height: 40px;
+    }
+    @media screen and (min-width: 1000px) {
+      padding: 1 8rem;
+    }
+    @media screen and (min-width: 1200px) {
+    }
   }
 `;
 const More = styled.div`

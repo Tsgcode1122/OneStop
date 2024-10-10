@@ -39,21 +39,23 @@ const Hero = () => {
           Discover your beauty with all our collections of face and body
           essentials.
         </p>
-        <Button>SHOP NOW</Button>
-        <Button1
-          initial={{
-            backgroundPositionX: "-200%", // Start outside the button
-          }}
-          whileHover={{
-            backgroundPositionX: "0%", // Animate to the full color fill
-          }}
-          transition={{
-            duration: 0.8, // Control the speed of the fill
-            ease: "easeInOut", // Smooth transition
-          }}
-        >
-          CATEGORIES
-        </Button1>
+        <Newsplit>
+          <Button>SHOP NOW</Button>
+          <Button1
+            initial={{
+              backgroundPositionX: "-200%", // Start outside the button
+            }}
+            whileHover={{
+              backgroundPositionX: "0%", // Animate to the full color fill
+            }}
+            transition={{
+              duration: 0.8, // Control the speed of the fill
+              ease: "easeInOut", // Smooth transition
+            }}
+          >
+            CATEGORIES
+          </Button1>
+        </Newsplit>
       </Content>
     </Container>
   );
@@ -61,11 +63,31 @@ const Hero = () => {
 
 export default Hero;
 
+const Newsplit = styled.div`
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media screen and (min-width: 800px) {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+`;
 const Container = styled.div`
   position: relative;
   width: 100%;
   height: 87vh;
   overflow: hidden;
+  @media screen and (min-width: 1000px) {
+    height: 90vh;
+  }
+  @media screen and (min-width: 1200px) {
+    height: 95vh;
+  }
 `;
 
 const Background = styled(motion.div)`
@@ -95,6 +117,12 @@ const Content = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media screen and (min-width: 1000px) {
+    height: 90vh;
+  }
+  @media screen and (min-width: 1200px) {
+    height: 95vh;
+  }
   h1 {
     padding: 0 2rem;
     font-family: "Playfair Display", serif;
@@ -113,6 +141,25 @@ const Content = styled.div`
     @media (min-width: 400px) and (max-width: 499px) {
       font-size: 40px;
       padding: 0 1rem;
+    }
+    @media screen and (min-width: 600px) {
+      max-width: 600px;
+      line-height: 57px;
+      font-size: 50px;
+    }
+    @media screen and (min-width: 800px) {
+      font-size: 60px;
+      max-width: 700px;
+      line-height: 57px;
+    }
+    @media screen and (min-width: 1000px) {
+      font-size: 77px;
+      line-height: 77px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 80px;
+      max-width: 900px;
+      line-height: 77px;
     }
   }
 
@@ -134,6 +181,25 @@ const Content = styled.div`
     @media (min-width: 400px) and (max-width: 499px) {
       font-size: 15px;
       padding: 0 2rem;
+    }
+    @media screen and (min-width: 600px) {
+      max-width: 400px;
+      line-height: 17px;
+      font-size: 18px;
+    }
+    @media screen and (min-width: 800px) {
+      font-size: 19px;
+      max-width: 600px;
+      line-height: 19px;
+    }
+    @media screen and (min-width: 1000px) {
+      font-size: 20px;
+      line-height: 18px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 21px;
+      max-width: 600px;
+      line-height: 21px;
     }
   }
 `;

@@ -122,6 +122,7 @@ const BigNav = styled.div`
   display: none;
   @media screen and (min-width: 820px) {
     display: block;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   z-index: 999 !important;
   background-color: #f2ebe2;
@@ -133,15 +134,16 @@ const BigNav = styled.div`
 const BigCon = styled.div`
   padding: 10px 40px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   @media screen and (min-width: 800px) {
     padding: 10px 50px;
   }
   @media screen and (min-width: 1000px) {
-    padding: 10px 70px;
+    padding: 1px 70px;
   }
   @media screen and (min-width: 1200px) {
-    padding: 10px 140px;
+    padding: 1px 140px;
   }
 `;
 const LinkBig = styled.div`
