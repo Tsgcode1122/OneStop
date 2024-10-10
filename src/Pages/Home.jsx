@@ -7,6 +7,8 @@ import Different from "../Component/Different";
 import ImageAlone from "../Component/ImageAlone";
 import Faqs from "../Component/Faqs";
 import OneStop from "../Component/OneStop";
+import FixedBackground from "../Design/FixedBackground";
+import VideoBackgroundComponent from "../Design/VideoBackgroundComponent";
 
 const Home = () => {
   useEffect(() => {
@@ -18,7 +20,10 @@ const Home = () => {
       <NewArrivals />
       <SingleImage />
       <VisitStore />
+      <FixedBackground />
+      <VideoBackgroundComponent />
       <Different />
+
       <ImageAlone />
       <Faqs />
       <OneStop />
