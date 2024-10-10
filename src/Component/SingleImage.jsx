@@ -45,6 +45,7 @@ const Container = styled.div`
     max-width: 100%;
     height: auto;
     border-radius: 10px;
+    overflow: hidden;
   }
   @media screen and (max-width: 320px) {
     padding: 5rem 1rem 6rem 1rem;

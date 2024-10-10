@@ -118,6 +118,7 @@ const Cont = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  overflow: hidden;
   gap: 10px;
   img {
     max-width: 100%;

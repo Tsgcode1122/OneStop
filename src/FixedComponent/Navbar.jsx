@@ -14,7 +14,7 @@ import {
 } from "@ant-design/icons";
 
 import { IoMdArrowDropright } from "react-icons/io";
-import logo from "../Images/shop.png";
+import logo from "../Images/SH.png";
 import { Colors } from "../Colors/ColorComponent";
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -127,7 +127,7 @@ const BigNav = styled.div`
   background-color: #f2ebe2;
   img {
     max-width: 100%;
-    height: 50px;
+    height: 30px;
   }
 `;
 const BigCon = styled.div`
@@ -177,7 +177,7 @@ const SidebarContent = styled.div`
 
     img {
       max-width: 100%;
-      height: 25px;
+      height: 15px;
     }
     @media screen and (max-width: 320px) {
       font-size: 14px;
@@ -217,7 +217,7 @@ const StyledNavbar = styled.div`
 
   img {
     max-width: 100%;
-    height: 40px;
+    height: 20px;
   }
   @media screen and (min-width: 820px) {
     display: none;
@@ -230,7 +230,7 @@ const HeadSpace = styled.div`
   margin: 1px 20px;
   justify-content: space-between;
   img {
-    height: 40px;
+    height: 25px;
   }
 `;
 
