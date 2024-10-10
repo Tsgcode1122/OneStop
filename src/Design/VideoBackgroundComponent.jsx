@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import vide from "../Images/vid.mp4";
+
 // Wrapper for the whole section
 const VideoBackgroundWrapper = styled.div`
   position: relative;
@@ -38,7 +38,7 @@ const VideoBackgroundComponent = () => {
     <>
       <VideoBackgroundWrapper>
         <VideoBackground
-          src={vide}
+          src="https://res.cloudinary.com/dhl0zyg5k/video/upload/v1724037926/RPReplay_Final1723980500_2_a0pd3z.mov"
           muted
           autoPlay
           loop
