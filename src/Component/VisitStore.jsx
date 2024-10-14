@@ -155,8 +155,8 @@ const Button = styled(motion.button)`
   transition: background-position 0.1s ease-in-out;
 
   &:hover {
-    color: black;
-    border: 2px solid #5fac68;
+    color: white;
+    border: 2px solid #58a661;
   }
 
   /* For mobile devices, mimic hover with active and focus states */

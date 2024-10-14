@@ -140,7 +140,7 @@ const Button = styled(motion.button)`
   transition: background-position 0.1s ease-in-out;
 
   &:hover {
-    color: #d4b396;
+    background-color: #d2ac8b;
   }
   &:active,
   &:focus {

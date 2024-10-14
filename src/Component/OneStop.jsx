@@ -49,12 +49,12 @@ const Content = styled.div`
   gap: 20px;
   border: 0.2px solid #bebebe;
   border-radius: 20px;
-
-  backdrop-filter: blur(14px);
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
   flex-direction: column;
   align-items: center;
   @media screen and (max-width: 320px) {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.9);
   }
   @media (min-width: 321px) and (max-width: 399px) {
     background-color: rgba(255, 255, 255, 0.1);

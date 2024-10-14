@@ -217,7 +217,7 @@ const Content = styled.div`
 
 const Button = styled.button`
   padding: 1.2rem 6rem;
-
+  color: white !important;
   font-size: 1rem;
   background: ${Colors.green};
   border: 1px solid white;
@@ -227,8 +227,9 @@ const Button = styled.button`
   transition: background-color 0.3s ease-in-out;
   margin-bottom: 10px;
   &:hover {
-    background-color: #e5efdc;
-    border: 1px solid #349c40;
+    background-color: #257b2f;
+
+    border: 1px solid #26752f;
   }
 `;
 const Button1 = styled(motion.button)`

@@ -91,14 +91,20 @@ const Different = () => {
 
 export default Different;
 const Split1 = styled.div`
+  @media screen and (max-width: 799px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   @media screen and (min-width: 800px) {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
-    @media screen and (min-width: 1100px) {
-      flex-direction: column;
-    }
+  }
+  @media screen and (min-width: 1100px) {
+    flex-direction: column;
   }
 `;
 const ImageContainer = styled.div`
@@ -213,6 +219,7 @@ const Intro = styled.p`
 const Underline = styled.div`
   content: "";
   height: 1px;
+
   margin: 20px 0 30px 0;
   background-color: black;
   width: 200px;
